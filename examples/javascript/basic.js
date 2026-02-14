@@ -13,14 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/maze';
  */
 async function callMazeGeneratorAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            width: 15,
-            height: 15,
-            difficulty: &#x27;medium&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
