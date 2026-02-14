@@ -17,14 +17,11 @@ def call_maze_api():
     Make a GET request to the Maze Generator API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;width&#x27;: 15, &#x27;height&#x27;: 15, &#x27;difficulty&#x27;: &#x27;medium&#x27;}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
