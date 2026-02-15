@@ -11,22 +11,19 @@ namespace APIVerve.API.MazeGenerator
     public class MazeGeneratorQueryOptions
     {
         /// <summary>
-        /// Maze width (5-50)
-        /// Example: 15
+        /// Maze width
         /// </summary>
         [JsonProperty("width")]
         public string Width { get; set; }
 
         /// <summary>
-        /// Maze height (5-50)
-        /// Example: 15
+        /// Maze height
         /// </summary>
         [JsonProperty("height")]
         public string Height { get; set; }
 
         /// <summary>
-        /// Difficulty: easy, medium, hard
-        /// Example: medium
+        /// Difficulty level
         /// </summary>
         [JsonProperty("difficulty")]
         public string Difficulty { get; set; }
