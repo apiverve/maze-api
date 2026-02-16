@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/maze",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Maze Generator creates random mazes using recursive backtracking algorithm with customizable size and difficulty.",
   "main": "index.js",
   "types": "index.d.ts",
