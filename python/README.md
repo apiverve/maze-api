@@ -44,7 +44,11 @@ from apiverve_mazegenerator.apiClient import MazeAPIClient
 # Initialize the client with your APIVerve API key
 api = MazeAPIClient("[YOUR_API_KEY]")
 
-query = { "width": 15, "height": 15, "difficulty": "medium" }
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "width": 15, "height": 15, "difficulty": "medium" }
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
 ```
 
 ###### Simple Request
@@ -1168,7 +1176,11 @@ from apiverve_mazegenerator.apiClient import MazeAPIClient, MazeAPIClientError
 
 api = MazeAPIClient("[YOUR_API_KEY]")
 
-query = { "width": 15, "height": 15, "difficulty": "medium" }
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
 
 try:
     result = api.execute(query)
@@ -1189,7 +1201,11 @@ from apiverve_mazegenerator.apiClient import MazeAPIClient, MazeAPIClientError
 
 api = MazeAPIClient("[YOUR_API_KEY]")
 
-query = { "width": 15, "height": 15, "difficulty": "medium" }
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
 
 try:
     result = api.execute(query)
@@ -1223,7 +1239,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_mazegenerator.apiClient import MazeAPIClient, MazeAPIClientError
 
-query = { "width": 15, "height": 15, "difficulty": "medium" }
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
 
 # Using context manager ensures proper cleanup
 with MazeAPIClient("[YOUR_API_KEY]") as api:
@@ -1249,7 +1269,11 @@ from apiverve_mazegenerator.apiClient import MazeAPIClient
 # Enable debug mode
 api = MazeAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "width": 15, "height": 15, "difficulty": "medium" }
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -1264,8 +1288,13 @@ from apiverve_mazegenerator.apiClient import MazeAPIClient
 
 api = MazeAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "width": 15,
+    "height": 15,
+    "difficulty": "medium"
+}
+
 try:
-    query = { "width": 15, "height": 15, "difficulty": "medium" }
     result = api.execute(query)
     print(result)
 finally:
