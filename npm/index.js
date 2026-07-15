@@ -30,7 +30,7 @@ class mazeWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/maze';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"width":{"type":"integer","required":false,"min":5,"max":50,"default":15},"height":{"type":"integer","required":false,"min":5,"max":50,"default":15},"difficulty":{"type":"string","required":false,"default":"medium"}};
+        this.validationRules = {"width":{"type":"integer","required":false,"min":5,"max":50,"default":15},"height":{"type":"integer","required":false,"min":5,"max":50,"default":15},"difficulty":{"type":"string","required":false,"default":"medium"},"image":{"type":"boolean","required":false,"default":false},"solutionImage":{"type":"boolean","required":false,"default":false}};
     }
 
     /**
