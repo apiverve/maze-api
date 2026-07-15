@@ -4,36 +4,48 @@ declare module '@apiverve/maze' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface mazeResponse {
     status: string;
     error: string | null;
     data: MazeGeneratorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface MazeGeneratorData {
-      width:         number;
-      height:        number;
-      difficulty:    string;
+      width:         number | null;
+      height:        number | null;
+      difficulty:    null | string;
       start:         End;
       end:           End;
-      grid:          Array<number[]>;
-      html:          string;
+      grid:          Array<(number | null)[]>;
+      html:          null | string;
       image:         Image;
       solutionImage: Image;
   }
   
   interface End {
-      x: number;
-      y: number;
+      x: number | null;
+      y: number | null;
   }
   
   interface Image {
-      imageName:   string;
-      format:      string;
-      downloadURL: string;
-      expires:     number;
+      imageName:   null | string;
+      format:      null | string;
+      downloadURL: null | string;
+      expires:     number | null;
   }
 
   export default class mazeWrapper {
