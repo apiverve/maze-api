@@ -17,7 +17,9 @@ const api = new mazeAPI({
 var query = {
   width: 15,
   height: 15,
-  difficulty: "medium"
+  difficulty: "medium",
+  image: false,
+  solutionImage: false
 };
 
 // Make the API request using callback
