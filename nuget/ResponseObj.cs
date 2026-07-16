@@ -25,15 +25,18 @@ namespace APIVerve.API.MazeGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("width")]
-        public long Width { get; set; }
+        public long? Width { get; set; }
 
         [JsonProperty("height")]
-        public long Height { get; set; }
+        public long? Height { get; set; }
 
         [JsonProperty("difficulty")]
         public string Difficulty { get; set; }
@@ -45,7 +48,7 @@ namespace APIVerve.API.MazeGenerator
         public End End { get; set; }
 
         [JsonProperty("grid")]
-        public long[][] Grid { get; set; }
+        public long?[][] Grid { get; set; }
 
         [JsonProperty("html")]
         public string Html { get; set; }
@@ -60,10 +63,10 @@ namespace APIVerve.API.MazeGenerator
     public partial class End
     {
         [JsonProperty("x")]
-        public long X { get; set; }
+        public long? X { get; set; }
 
         [JsonProperty("y")]
-        public long Y { get; set; }
+        public long? Y { get; set; }
     }
 
     public partial class Image
@@ -78,6 +81,18 @@ namespace APIVerve.API.MazeGenerator
         public Uri DownloadUrl { get; set; }
 
         [JsonProperty("expires")]
-        public long Expires { get; set; }
+        public long? Expires { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
