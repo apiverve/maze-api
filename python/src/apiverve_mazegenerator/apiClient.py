@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -26,7 +26,9 @@ class MazeAPIClient:
     VALIDATION_RULES = {
         "width": {"type": "integer", "required": False, "min": 5, "max": 50, "default": 15},
         "height": {"type": "integer", "required": False, "min": 5, "max": 50, "default": 15},
-        "difficulty": {"type": "string", "required": False, "default": "medium"}
+        "difficulty": {"type": "string", "required": False, "default": "medium"},
+        "image": {"type": "boolean", "required": False, "default": False},
+        "solutionImage": {"type": "boolean", "required": False, "default": False}
     }
 
     # Format validation patterns
