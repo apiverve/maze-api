@@ -18,7 +18,7 @@ servers:
 paths:
   /v1/maze:
     get:
-      summary: Generate Maze
+      summary: Maze Generator
       description: Create a maze puzzle
       operationId: maze
       parameters:
@@ -1543,14 +1543,12 @@ paths:
                   image:
                     imageName: 24ed4b60-28c5-4aa9-9d18-0dec8c2df627_puzzle.png
                     format: .png
-                    downloadURL: >-
-                      https://storage.googleapis.com/apiverve/APIData/maze/24ed4b60-28c5-4aa9-9d18-0dec8c2df627_puzzle.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010378&Signature=bh3WmsCSjfVyE003mAyBjbWf07n4%2FjfI48d%2FpJpNAQEimQ113b%2F1%2FcovTUBbbMBOMy8ehlNHL9TDUcg7JNkfbIZL9ZePI0ioWQygbZro6ypdiHv0url3Iwh46nQbp6PqQ8KVUYF2%2FE7vCVEji15cJDK%2F5NJ61Y40ICPhbDGuxRBoDpvBuYS5mIYaOgrteLQpfYUL5qlSE%2F34ifcA8PTxfPjTNG4ixNmRELw6xqtcQs7RMFVTui6bm9eEA6a8D%2Br7h7NhUEnJv7kuJJVY1ieHKxg6yTJIWZUd%2FVIXrPRTJF3lgpgJFubXzAs5x01CVxEGl%2B2cUiG4u4gB%2F4ILITSJsw%3D%3D
+                    downloadURL: https://storage.googleapis.com/apiverve/APIData/maze/24ed4b60-28c5-4aa9-9d18-0dec8c2df627_puzzle.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010378&Signature=bh3WmsCSjfVyE003mAyBjbWf07n4%2FjfI48d%2FpJpNAQEimQ113b%2F1%2FcovTUBbbMBOMy8ehlNHL9TDUcg7JNkfbIZL9ZePI0ioWQygbZro6ypdiHv0url3Iwh46nQbp6PqQ8KVUYF2%2FE7vCVEji15cJDK%2F5NJ61Y40ICPhbDGuxRBoDpvBuYS5mIYaOgrteLQpfYUL5qlSE%2F34ifcA8PTxfPjTNG4ixNmRELw6xqtcQs7RMFVTui6bm9eEA6a8D%2Br7h7NhUEnJv7kuJJVY1ieHKxg6yTJIWZUd%2FVIXrPRTJF3lgpgJFubXzAs5x01CVxEGl%2B2cUiG4u4gB%2F4ILITSJsw%3D%3D
                     expires: 1766010378634
                   solutionImage:
                     imageName: 7d1c4b60-c228-47d1-9f8a-d8141d087cdc_solution.png
                     format: .png
-                    downloadURL: >-
-                      https://storage.googleapis.com/apiverve/APIData/maze/7d1c4b60-c228-47d1-9f8a-d8141d087cdc_solution.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010378&Signature=H7m2zOphZK6elU3niJ4BSJD%2FABqi%2BZ1cPKUfG8QJbd1fY3nyhVdD5wFAcGzvCN76kjtVg%2BwBlbIDr3QG6FhrBhll9eY2t3UnCioJQ6lqQZYRIaB%2FmURSUbeLEIg2PZvODwf3qgZmTSsH8kIiLynIgr3vvvJ%2FBzJFKt56OUZLo2eynqLVWz%2FiQbUCcZ%2F5C6auROc2nWvhoPgV1xAwKEYlNCyFnHXbtTbBiBMqmk7n7SXg3l3ijQGuop8WYWPoAdI0%2FqQcREz5HwTdFsOdsv7sfh2TusSpPzNUycR%2F%2B6KlwWduiB0TKYAZSrmn5GYsDHxF%2BxjgNT5xaT02%2FFvelOb5mw%3D%3D
+                    downloadURL: https://storage.googleapis.com/apiverve/APIData/maze/7d1c4b60-c228-47d1-9f8a-d8141d087cdc_solution.png?GoogleAccessId=635500398038-compute%40developer.gserviceaccount.com&Expires=1766010378&Signature=H7m2zOphZK6elU3niJ4BSJD%2FABqi%2BZ1cPKUfG8QJbd1fY3nyhVdD5wFAcGzvCN76kjtVg%2BwBlbIDr3QG6FhrBhll9eY2t3UnCioJQ6lqQZYRIaB%2FmURSUbeLEIg2PZvODwf3qgZmTSsH8kIiLynIgr3vvvJ%2FBzJFKt56OUZLo2eynqLVWz%2FiQbUCcZ%2F5C6auROc2nWvhoPgV1xAwKEYlNCyFnHXbtTbBiBMqmk7n7SXg3l3ijQGuop8WYWPoAdI0%2FqQcREz5HwTdFsOdsv7sfh2TusSpPzNUycR%2F%2B6KlwWduiB0TKYAZSrmn5GYsDHxF%2BxjgNT5xaT02%2FFvelOb5mw%3D%3D
                     expires: 1766010378983
         '401':
           description: Your request was not authorized, or your API Key was invalid
