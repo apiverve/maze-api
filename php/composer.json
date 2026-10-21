@@ -1,7 +1,7 @@
 {
     "name": "apiverve/maze",
     "description": "Maze Generator creates random mazes using recursive backtracking algorithm with customizable size and difficulty.",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "printable maze",
         "pathfinding"
     ],
-    "homepage": "https://apiverve.com/marketplace/maze?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/maze?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/maze",
