@@ -41,7 +41,7 @@ paths:
           schema:
             type: string
           required: false
-          description: Difficulty level
+          description: Difficulty level; harder mazes have a longer solution path
           example: medium
         - name: image
           in: query
