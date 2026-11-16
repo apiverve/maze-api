@@ -1,6 +1,6 @@
 name: apiverve_maze
 description: "Maze Generator creates random mazes using recursive backtracking algorithm with customizable size and difficulty."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/maze?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/maze-api/tree/main/dart
 

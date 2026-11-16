@@ -51,7 +51,7 @@ final _formatPatterns = {
 /// Parameters:
 /// * [width] - Maze width [min: 5, max: 50]
 /// * [height] - Maze height [min: 5, max: 50]
-/// * [difficulty] - Difficulty level
+/// * [difficulty] - Difficulty level; harder mazes have a longer solution path
 /// * [image] - Set to true to generate a downloadable maze image
 /// * [solutionImage] - Set to true to generate a downloadable solution image
 class MazeClient {
