@@ -23,7 +23,7 @@ namespace APIVerve.API.MazeGenerator
         public int? Height { get; set; }
 
         /// <summary>
-        /// Difficulty level
+        /// Difficulty level; harder mazes have a longer solution path
         /// </summary>
         [JsonProperty("difficulty")]
         public string Difficulty { get; set; }
